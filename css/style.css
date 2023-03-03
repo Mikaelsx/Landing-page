@@ -1,90 +1,125 @@
-@font-face {
-    font-family: mikael;
-    src: url(../assets/fontes/Bebas-Neue/BebasNeue-Regular.ttf);
-}
-
-@font-face {
-    font-family: souza;
-    src: url(../assets/fontes/Courier-prime/CourierPrime-Regular.ttf);
-}
-
-
-/* reset page */
-
-* {
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-
-/* nav */
-
-.layout-grid {
-    width: 100%;
-    height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    border: 1px solid red;
-}
-
-
-/* cabeçalho */
-
-header {
-    background-color: #f9003d;
-    height: 60px;
-}
-
-
-/* flexbox do cabeçalho */
-
-header .header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-header nav {
-    width: 600px;
-}
-
-body {
-    margin: 0%;
-}
-
-header nav a {
-    font-family: mikael;
-    color: white;
-    width: 700px;
-    padding: 25px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-main .banner {
-    width: 100%;
-    height: 740px;
-    background-image: none;
-}
-
-
-/* título principal */
-
-h1 {
-    font-family: mikael;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-    font-size: 50px;
-}
-
-
-/* subtítulo */
-
-h2 {
-    font-family: souza;
-    letter-spacing: 1px;
-    font-size: 30px;
-    color: #F9003D;
-}
+                                    @font-face {
+                                        font-family: mikael;
+                                        src: url(../assets/fontes/Bebas-Neue/BebasNeue-Regular.ttf);
+                                    }
+                                    
+                                    @font-face {
+                                        font-family: souza;
+                                        src: url(../assets/fontes/Courier-prime/CourierPrime-Regular.ttf);
+                                    }
+                                    /* reset page */
+                                    
+                                    * {
+                                        margin: 0;
+                                        padding: 0%;
+                                        box-sizing: border-box;
+                                    }
+                                    /* nav */
+                                    
+                                    .layout-grid {
+                                        width: 100%;
+                                        height: 100%;
+                                        max-width: 1200px;
+                                        margin: 0 auto;
+                                    }
+                                    /* cabeçalho */
+                                    
+                                    header {
+                                        background-color: #f9003d;
+                                        height: 60px;
+                                    }
+                                    /* flexbox do cabeçalho */
+                                    
+                                    header .header-flex {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-end;
+                                    }
+                                    
+                                    header nav {
+                                        width: 600px;
+                                    }
+                                    
+                                    body {
+                                        margin: 0%;
+                                    }
+                                    
+                                    header nav a {
+                                        font-family: mikael;
+                                        color: white;
+                                        width: 700px;
+                                        padding: 25px;
+                                        text-decoration: none;
+                                        letter-spacing: 2px;
+                                        text-transform: uppercase;
+                                    }
+                                    /* pagina1 */
+                                    
+                                    main .banner {
+                                        width: 100%;
+                                        height: 740px;
+                                        color: white;
+                                        background-image: url(../assets/images/imagem-fundo-banner.png);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-position: bottom;
+                                    }
+                                    
+                                    main .banner-flex {
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                    
+                                    main .banner #bannerinfo {
+                                        width: 550;
+                                    }
+                                    /* título principal */
+                                    
+                                    #titulo-principal {
+                                        font-family: mikael;
+                                        color: white;
+                                        letter-spacing: 2px;
+                                        font-size: 96px;
+                                        margin-bottom: 30px;
+                                        padding-bottom: 10px;
+                                        border-bottom: 2px solid #ffaf00;
+                                    }
+                                    /* subtítulo */
+                                    
+                                    h2 {
+                                        font-family: souza;
+                                        color: #F9003D;
+                                        letter-spacing: 1px;
+                                        font-size: 53px;
+                                        margin-bottom: 30px;
+                                    }
+                                    /* titulo principal pagina2 */
+                                    
+                                    h3 {
+                                        font-family: mikael;
+                                        color: #F9003D;
+                                        letter-spacing: 1px;
+                                        font-size: 64px;
+                                        padding-left: 165px;
+                                        margin-top: 70px;
+                                    }
+                                    
+                                    main .pagina2 {
+                                        display: flex;
+                                        align-items: flex-start;
+                                    }
+                                    /* mouse */
+                                    
+                                    #image {
+                                        margin-left: 20px;
+                                    }
+                                    /* pagina2 */
+                                    
+                                    section {
+                                        width: 100%;
+                                        height: 740px;
+                                        background-image: url(../assets_/imagem-fundo-endereco.png);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-position: bottom;
+                                    }
