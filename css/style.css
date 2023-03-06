@@ -7,6 +7,10 @@
                                         font-family: souza;
                                         src: url(../assets/fontes/Courier-prime/CourierPrime-Regular.ttf);
                                     }
+                                    @font-face {
+                                        font-family: falcao;
+                                        src: url(../assets/fontes/static/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf);
+                                    }
                                     /* reset page */
                                     
                                     * {
@@ -41,7 +45,10 @@
                                     }
                                     
                                     body {
-                                        margin: 0%;
+                                        background-color: #080324;
+                                        color: white;
+                                        font-family: 'Courier New', Courier, monospace;
+                                        font-size: 16px;        
                                     }
                                     
                                     header nav a {
@@ -86,7 +93,7 @@
                                     }
                                     /* subtítulo */
                                     
-                                    h2 {
+                                    h1 {
                                         font-family: souza;
                                         color: #F9003D;
                                         letter-spacing: 1px;
@@ -95,13 +102,39 @@
                                     }
                                     /* titulo principal pagina2 */
                                     
-                                    h3 {
+                                    h2 {
                                         font-family: mikael;
                                         color: #F9003D;
                                         letter-spacing: 1px;
                                         font-size: 64px;
-                                        padding-left: 165px;
+                                        padding-left: 0px;
                                         margin-top: 70px;
+                                        padding-bottom: 50px;
+                                        padding-left: 160px;
+                                    }
+
+                                    h3 {
+                                        font-family: souza;
+                                        color: white;
+                                        font-size: 24px;
+                                        margin-bottom: 40px;
+                                        padding-top: 120px;
+                                        width: 640px; 
+                                        margin-top: 75px;
+
+                                    }
+
+                                    h4{
+                                        font-family: mikael;
+                                        color: #ffaf00;
+                                        font-size:54px;
+                                                                         
+                                    }
+
+                                    p{
+                                        font-family: falcao;
+                                        font-size: 18px;
+                                        margin-right: 160px;
                                     }
                                     
                                     main .pagina2 {
@@ -122,4 +155,14 @@
                                         background-repeat: no-repeat;
                                         background-size: cover;
                                         background-position: bottom;
+                                    }
+
+                                    #img1 {
+                                      display: flex;
+                                      margin-left: 160px;  
+                                    } 
+                                    
+                                    header nav a:hover {
+                                        background-color: white;
+                                        color: #f9003d;
                                     }
