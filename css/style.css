@@ -1,168 +1,217 @@
-                                    @font-face {
-                                        font-family: mikael;
-                                        src: url(../assets/fontes/Bebas-Neue/BebasNeue-Regular.ttf);
-                                    }
-                                    
-                                    @font-face {
-                                        font-family: souza;
-                                        src: url(../assets/fontes/Courier-prime/CourierPrime-Regular.ttf);
-                                    }
-                                    @font-face {
-                                        font-family: falcao;
-                                        src: url(../assets/fontes/static/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf);
-                                    }
-                                    /* reset page */
-                                    
-                                    * {
-                                        margin: 0;
-                                        padding: 0%;
-                                        box-sizing: border-box;
-                                    }
-                                    /* nav */
-                                    
-                                    .layout-grid {
-                                        width: 100%;
-                                        height: 100%;
-                                        max-width: 1200px;
-                                        margin: 0 auto;
-                                    }
-                                    /* cabeçalho */
-                                    
-                                    header {
-                                        background-color: #f9003d;
-                                        height: 60px;
-                                    }
-                                    /* flexbox do cabeçalho */
-                                    
-                                    header .header-flex {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: flex-end;
-                                    }
-                                    
-                                    header nav {
-                                        width: 600px;
-                                    }
-                                    
-                                    body {
-                                        background-color: #080324;
-                                        color: white;
-                                        font-family: 'Courier New', Courier, monospace;
-                                        font-size: 16px;        
-                                    }
-                                    
-                                    header nav a {
-                                        font-family: mikael;
-                                        color: white;
-                                        width: 700px;
-                                        padding: 25px;
-                                        text-decoration: none;
-                                        letter-spacing: 2px;
-                                        text-transform: uppercase;
-                                    }
-                                    /* pagina1 */
-                                    
-                                    main .banner {
-                                        width: 100%;
-                                        height: 740px;
-                                        color: white;
-                                        background-image: url(../assets/images/imagem-fundo-banner.png);
-                                        background-repeat: no-repeat;
-                                        background-size: cover;
-                                        background-position: bottom;
-                                    }
-                                    
-                                    main .banner-flex {
-                                        display: flex;
-                                        align-items: center;
-                                    }
-                                    
-                                    main .banner #bannerinfo {
-                                        width: 550;
-                                    }
-                                    /* título principal */
-                                    
-                                    #titulo-principal {
-                                        font-family: mikael;
-                                        color: white;
-                                        letter-spacing: 2px;
-                                        font-size: 96px;
-                                        margin-bottom: 30px;
-                                        padding-bottom: 10px;
-                                        border-bottom: 2px solid #ffaf00;
-                                    }
-                                    /* subtítulo */
-                                    
-                                    h1 {
-                                        font-family: souza;
-                                        color: #F9003D;
-                                        letter-spacing: 1px;
-                                        font-size: 53px;
-                                        margin-bottom: 30px;
-                                    }
-                                    /* titulo principal pagina2 */
-                                    
-                                    h2 {
-                                        font-family: mikael;
-                                        color: #F9003D;
-                                        letter-spacing: 1px;
-                                        font-size: 64px;
-                                        padding-left: 0px;
-                                        margin-top: 70px;
-                                        padding-bottom: 50px;
-                                        padding-left: 160px;
-                                    }
+@font-face {
+    font-family: mikael;
+    src: url(../assets/fontes/Bebas-Neue/BebasNeue-Regular.ttf);
+}
 
-                                    h3 {
-                                        font-family: souza;
-                                        color: white;
-                                        font-size: 24px;
-                                        margin-bottom: 40px;
-                                        padding-top: 120px;
-                                        width: 640px; 
-                                        margin-top: 75px;
+@font-face {
+    font-family: souza;
+    src: url(../assets/fontes/Courier-prime/CourierPrime-Regular.ttf);
+}
 
-                                    }
+@font-face {
+    font-family: falcao;
+    src: url(../assets/fontes/static/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf);
+}
 
-                                    h4{
-                                        font-family: mikael;
-                                        color: #ffaf00;
-                                        font-size:54px;
-                                                                         
-                                    }
+header #hamburguer {
+    display: none;
+}
 
-                                    p{
-                                        font-family: falcao;
-                                        font-size: 18px;
-                                        margin-right: 160px;
-                                    }
-                                    
-                                    main .pagina2 {
-                                        display: flex;
-                                        align-items: flex-start;
-                                    }
-                                    /* mouse */
-                                    
-                                    #image {
-                                        margin-left: 20px;
-                                    }
-                                    /* pagina2 */
-                                    
-                                    section {
-                                        width: 100%;
-                                        height: 740px;
-                                        background-image: url(../assets_/imagem-fundo-endereco.png);
-                                        background-repeat: no-repeat;
-                                        background-size: cover;
-                                        background-position: bottom;
-                                    }
+/* reset page */
 
-                                    #img1 {
-                                      display: flex;
-                                      margin-left: 160px;  
-                                    } 
-                                    
-                                    header nav a:hover {
-                                        background-color: white;
-                                        color: #f9003d;
-                                    }
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* nav */
+
+.layout-grid {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* cabeçalho */
+
+header {
+    background-color: #f9003d;
+    height: 60px;
+}
+
+/* flexbox do cabeçalho */
+
+header .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav {
+    width: 600px;
+}
+
+body {
+    background-color: #080324;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+header nav a {
+    font-family: mikael;
+    color: white;
+    width: 700px;
+    padding: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* pagina1 */
+
+main .banner {
+    width: 100%;
+    height: 740px;
+    color: white;
+    background-image: url(../assets/images/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+main .banner-flex {
+    display: flex;
+    align-items: center;
+}
+
+main .banner #bannerinfo {
+    width: 550;
+}
+
+/* título principal */
+
+#titulo-principal {
+    font-family: mikael;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 96px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffaf00;
+}
+
+/* subtítulo */
+
+h1 {
+    font-family: souza;
+    color: #F9003D;
+    letter-spacing: 1px;
+    font-size: 53px;
+    margin-bottom: 30px;
+}
+
+/* titulo principal pagina2 */
+
+h2 {
+    font-family: mikael;
+    color: #F9003D;
+    letter-spacing: 1px;
+    font-size: 64px;
+    padding-left: 0px;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 160px;
+}
+
+h3 {
+    font-family: souza;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding-top: 120px;
+    width: 640px;
+    margin-top: 75px;
+
+}
+
+h4 {
+    font-family: mikael;
+    color: #ffaf00;
+    font-size: 54px;
+
+}
+
+p {
+    font-family: falcao;
+    font-size: 18px;
+    margin-right: 160px;
+}
+
+main .pagina2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* mouse */
+
+#image {
+    margin-left: 20px;
+}
+
+/* pagina2 */
+
+section {
+    width: 100%;
+    height: 740px;
+    background-image: url(../assets_/imagem-fundo-endereco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#img1 {
+    display: flex;
+    margin-left: 160px;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: #f9003d;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        display: none;
+    }
+
+    header nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 80vw;
+        max-width: 360px;
+        height: 100vw;
+        border: 4px solid #000000;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F9003D;
+    }
+
+    header nav a {
+        display: flex;
+        width: 40px;
+        margin-bottom: 10px;
+        border-left: 2px dashed white;
+        border-radius: 0%;
+        font-size: 22px;
+    }
+
+    header #hamburguer {
+        display: block;
+    }
+}
